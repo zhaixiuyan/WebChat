@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebChat</title>
+</head>
+<body>
+<div>
+    <div>
+        <input type="text" id="txt">
+        <input type="button" value="send" onclick="sendMsg();">
+        <input type="button" value="close" onclick="closeConn();">
+    </div>
+    <h2>聊天记录</h2>
+    <div id="content">
+
+    </div>
+</div>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+<script>
+
+    var ws = new WebSocket("ws://127.0.0.1:8000/chat/");
+
+    ws.onopen = function(){
+        // 客户端验证握手环节完成之后，自动执行该方法
+        console.log("链接成功。。。")
+    };
+
+    ws.onmessage = function (event) {
+        //  接受服务端发送的消息
+        //  客户端完成握手验证之后 触发该方法
+        console.log(event.data);
+        var tag = $("<div>");
+        tag.text(event.data);
+        $("#content").append(tag);
+        console.log(1)
+
+    };
+
+    function sendMsg() {
+        // ws.send()：发送消息
+      ws.send($("#txt").val());
+
+    };
+
+    function closeConn() {
+        // ws.close()：关闭Websocket链接
+        console.log("断开链接。。。");
+        ws.close();
+    };
+
+</script>
+</body>
+</html>
