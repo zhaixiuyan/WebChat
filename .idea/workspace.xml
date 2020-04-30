@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5d5cc68-275b-41a2-8f00-8f291b9015b2" name="默认更改列表" comment="" />
+    <list default="true" id="f5d5cc68-275b-41a2-8f00-8f291b9015b2" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/routing.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/routing.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +21,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1b9TGswPn4K74nKnCZnAJshDv6R" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -69,6 +76,7 @@
       <workItem from="1588043230013" duration="3296000" />
       <workItem from="1588066760701" duration="8438000" />
       <workItem from="1588125465324" duration="1258000" />
+      <workItem from="1588231028362" duration="745000" />
     </task>
     <servers />
   </component>
